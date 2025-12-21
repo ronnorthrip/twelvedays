@@ -2,10 +2,11 @@
 
 namespace App\Models;
 
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Animal extends Model
+class Country extends Model
 {
-    protected $guarded = [];
-
+    /** @use HasFactory<\Database\Factories\CountryFactory> */
+    use HasFactory;
 }
