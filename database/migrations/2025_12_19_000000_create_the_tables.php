@@ -14,26 +14,32 @@ return new class extends Migration
         Schema::create('activities', function (Blueprint $table) {
             $table->id();
             $table->string('name');
+            $table->timestamps();
         });
         Schema::create('animals', function (Blueprint $table) {
             $table->id();
             $table->string('name');
+            $table->timestamps();
         });
         Schema::create('countries', function (Blueprint $table) {
             $table->id();
             $table->string('name');
+            $table->timestamps();
         });
         Schema::create('days', function (Blueprint $table) {
             $table->id();
             $table->string('name');
+            $table->timestamps();
         });
         Schema::create('locations', function (Blueprint $table) {
             $table->id();
             $table->string('name');
+            $table->timestamps();
         });
         Schema::create('people', function (Blueprint $table) {
             $table->id();
             $table->string('name');
+            $table->timestamps();
         });
     }
 
