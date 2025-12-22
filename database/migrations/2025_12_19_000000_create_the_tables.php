@@ -23,6 +23,10 @@ return new class extends Migration
             $table->id();
             $table->string('name');
         });
+        Schema::create('days', function (Blueprint $table) {
+            $table->id();
+            $table->string('name');
+        });
         Schema::create('locations', function (Blueprint $table) {
             $table->id();
             $table->string('name');
