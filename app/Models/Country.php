@@ -8,5 +8,5 @@ use Illuminate\Database\Eloquent\Model;
 class Country extends Model
 {
     /** @use HasFactory<\Database\Factories\CountryFactory> */
-    use HasFactory;
+    use HasFactory, Singable;
 }

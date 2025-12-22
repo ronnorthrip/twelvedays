@@ -8,5 +8,5 @@ use Illuminate\Database\Eloquent\Model;
 class Location extends Model
 {
     /** @use HasFactory<\Database\Factories\LocationFactory> */
-    use HasFactory;
+    use HasFactory, Singable;
 }
