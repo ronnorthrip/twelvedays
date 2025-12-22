@@ -15,6 +15,6 @@ class Day extends Model
 
     public function singables(): HasMany
     {
-        return $this->hasMany(Singable::class);
+        return $this->hasMany(Singable::class)->orderBy('sorter');
     }
 }
