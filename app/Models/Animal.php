@@ -8,5 +8,5 @@ use Illuminate\Database\Eloquent\Model;
 class Animal extends Model
 {
     /** @use HasFactory<\Database\Factories\AnimalFactory> */
-    use HasFactory, Singable;
+    use HasFactory;
 }
