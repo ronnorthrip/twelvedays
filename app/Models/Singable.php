@@ -6,5 +6,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class Singable extends Model
 {
+    protected $guarded = [];
     //
 }

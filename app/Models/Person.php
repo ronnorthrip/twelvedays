@@ -10,4 +10,6 @@ class Person extends Model
 {
     /** @use HasFactory<\Database\Factories\PersonFactory> */
     use HasFactory, CanBeSung;
+
+    protected $guarded = [];
 }

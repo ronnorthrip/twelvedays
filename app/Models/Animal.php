@@ -10,4 +10,6 @@ class Animal extends Model
 {
     /** @use HasFactory<\Database\Factories\AnimalFactory> */
     use HasFactory;
+
+    protected $guarded = [];
 }

@@ -9,4 +9,6 @@ class Day extends Model
 {
     /** @use HasFactory<\Database\Factories\DayFactory> */
     use HasFactory;
+
+    protected $guarded = [];
 }

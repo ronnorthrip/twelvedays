@@ -10,4 +10,6 @@ class Country extends Model
 {
     /** @use HasFactory<\Database\Factories\CountryFactory> */
     use HasFactory, CanBeSung;
+
+    protected $guarded = [];
 }
