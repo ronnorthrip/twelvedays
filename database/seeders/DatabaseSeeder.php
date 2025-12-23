@@ -2,6 +2,13 @@
 
 namespace Database\Seeders;
 
+use App\Models\Activity;
+use App\Models\Animal;
+use App\Models\Country;
+use App\Models\Location;
+use App\Models\Person;
+use App\Models\Singable;
+use App\Models\Day;
 use App\Models\User;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
