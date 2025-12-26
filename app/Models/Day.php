@@ -13,7 +13,7 @@ class Day extends Model
 
     protected $guarded = [];
 
-    public function singables(): HasMany
+    public function lyrics(): HasMany
     {
         return $this->hasMany(Singable::class)->orderBy('id');
     }
