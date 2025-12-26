@@ -31,6 +31,11 @@ return new class extends Migration
             $table->string('name');
             $table->timestamps();
         });
+        Schema::create('jewelries', function (Blueprint $table) {
+            $table->id();
+            $table->string('name');
+            $table->timestamps();
+        });
         Schema::create('locations', function (Blueprint $table) {
             $table->id();
             $table->string('name');
@@ -51,6 +56,8 @@ return new class extends Migration
         Schema::dropIfExists('activities');
         Schema::dropIfExists('animals');
         Schema::dropIfExists('countries');
+        Schema::dropIfExists('days');
+        Schema::dropIfExists('jewelries');
         Schema::dropIfExists('locations');
         Schema::dropIfExists('people');
     }
