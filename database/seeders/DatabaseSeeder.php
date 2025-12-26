@@ -26,7 +26,6 @@ class DatabaseSeeder extends Seeder
         $day = \App\Models\Day::create(['name'=>'First']);
         $animal = \App\Models\Animal::create(['name' => 'A partidge']);
         $location = \App\Models\Location::create(['name' => 'in a pear tree']);
-        return;
         $lyric1 = $day->lyrics()->make();
         $lyric2 = $day->lyrics()->make();
         $lyric1->singable()->associate($animal)->save();
